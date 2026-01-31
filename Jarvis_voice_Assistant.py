@@ -32,21 +32,15 @@ def textsp(x):
 
 if __name__ == "__main__":
 
-    # while True:
-    #     voice_data = sptext().lower()
-    #     if voice_data == "hello":
-    #         textsp('hello good morning how can i help u today')
-    #     elif voice_data == "what is your name":
-    #         textsp('my self jarvis you voice assistant')
-    #     elif voice_data == "what is the date today":
-    #         textsp('today 15 of january 2026')
+    while True:
+        voice_data = sptext().lower()
+        if voice_data == "hello":
+            textsp('hello good morning how can i help u today')
+        elif voice_data == "what is your name":
+            textsp('my self jarvis you voice assistant')
+        elif voice_data == "what is the date today":
+            textsp('today 15 of january 2026')
 
     # voice_data = sptext().lower()
     # if voice_data == "hello jarvis":
     #     textsp("hello monty how are u")
-
-    
-
-
-
-
