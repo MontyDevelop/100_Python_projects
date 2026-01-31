@@ -40,7 +40,3 @@ if __name__ == "__main__":
             textsp('my self jarvis you voice assistant')
         elif voice_data == "what is the date today":
             textsp('today 15 of january 2026')
-
-    # voice_data = sptext().lower()
-    # if voice_data == "hello jarvis":
-    #     textsp("hello monty how are u")
