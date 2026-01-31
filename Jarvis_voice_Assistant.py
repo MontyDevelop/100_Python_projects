@@ -32,11 +32,20 @@ def textsp(x):
 
 if __name__ == "__main__":
 
-    while True:
-        voice_data = sptext().lower()
-        if voice_data == "hello":
-            textsp('hello good morning how can i help u today')
-        elif voice_data == "what is your name":
-            textsp('my self jarvis you voice assistant')
-        elif voice_data == "what is the date today":
-            textsp('today 15 of january 2026')
+    voice_data = sptext().lower()
+    print(voice_data)
+    if "your name" in voice_data:
+        name = 'Hello i am Jarvis.'
+        textsp(name)
+    elif "old are you" in voice_data:
+        age = "i am two years old machine"
+        textsp(age)
+    elif "time" in voice_data:
+        current_time = datetime.datetime.now().strftime("%I%M%p")
+        textsp(current_time)
+    elif 'youtube' in voice_data:
+        webbrowser.open("https://www.youtube.com/")
+    elif 'joke' in voice_data:
+        joke1 = pyjokes.get_joke(language='en', category='neutral')
+        print(joke1)
+        textsp(joke1)
